@@ -1,0 +1,37 @@
+<Window
+    x:Class="PrivacyGuard.WinUI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="PrivacyGuard Windows" Height="700" Width="600">
+
+    <Grid Background="#1A1A1A">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="20">
+            <!-- Camera Preview Placeholder -->
+            <Border Width="500" Height="350" Background="#2A2A2A" CornerRadius="12">
+                <TextBlock Text="Live Camera Preview&#x0A;(WinUI Capture)" 
+                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                           Foreground="#888888" FontSize="18"/>
+            </Border>
+
+            <!-- Status -->
+            <TextBlock x:Name="StatusText" Text="Ready to protect your screen" 
+                       Foreground="#00FF00" FontSize="20" HorizontalAlignment="Center"/>
+
+            <!-- Controls -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="16">
+                <Button x:Name="StartButton" Content="Start Monitoring" 
+                        Click="StartButton_Click" Background="#0078D4" Foreground="White"
+                        Padding="20,10" FontSize="16"/>
+                <Button x:Name="StopButton" Content="Stop Monitoring" 
+                        Click="StopButton_Click" Background="#D83B01" Foreground="White"
+                        Padding="20,10" FontSize="16" IsEnabled="False"/>
+            </StackPanel>
+
+            <TextBlock Text="PrivacyGuard Windows • On-device • Real-time" 
+                       Foreground="#666666" FontSize="12" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>
