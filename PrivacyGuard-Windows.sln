@@ -8,9 +8,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivacyGuard.Demo", "src\Pr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivacyGuard.Background", "src\PrivacyGuard.Background\PrivacyGuard.Background.csproj", "{C3D4E5F6-A7B8-9012-CDEF-345678901234}"
 EndProject
-# WinUI project builds locally in Visual Studio (excluded from CI due to XamlCompiler requirements)
-# Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivacyGuard.WinUI", "src\PrivacyGuard.WinUI\PrivacyGuard.WinUI.csproj", "{D4E5F6A7-B8C9-0123-DEF0-456789012345}"
-# EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
